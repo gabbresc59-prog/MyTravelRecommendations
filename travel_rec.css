@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-weight: bold;
   }
@@ -24,18 +25,29 @@
     display: inline;
   }
   
-  .links a {
+  .links ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    float: left;
+    padding-left: 10px;
   }
  
   .links {
-    float: center;
+    float: left;
+    /*padding-left: 1cm;*/
   }
 
   .search {
     float: right;
+    background-color: white;
+    padding: 8px;
+    border-radius: 20px;
+  }
+
+  #glass {
+    width: 10px;
+    height: 10px;
   }
 
   #company_name {
@@ -43,6 +55,30 @@
     font-weight: bold;
     font-size: 20px;
     font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
     padding-left: 10px;
+    float: left;
+  }
+
+  #icon {
+    float: left;
+    width: 25px;
+    height: 25px;
+  }
+
+  #conditionInput {
+    color: rgb(0, 118, 106);
+    border-color: white;
+    border-style: none;
+    padding-right: 10px;
+  }
+
+  .query {
+    background-color: rgb(0, 118, 106);
+    color: white;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    font-size: 10px;
   }
