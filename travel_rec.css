@@ -46,8 +46,9 @@
   }
 
   #glass {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
   }
 
   #company_name {
@@ -81,4 +82,65 @@
     padding-right: 10px;
     border-radius: 3px;
     font-size: 10px;
+  }
+
+  /* CSS for thje main page */
+
+  .vertical {
+    border-left: 2px solid white;
+    height: 150px;
+    margin-left: 20px;
+    float: left;
+  }
+
+  body {
+    background-image: url('./Images/Landscape.jpg');
+  }
+
+  .container {
+    overflow: hidden;
+  }
+
+  .headings {
+    max-width: 400px;
+    overflow: hidden;
+    margin-left: 80px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+  }
+
+  .social_media {
+    max-width: 30px;
+    margin-left: 10px;
+    float: left;
+  }
+
+  .social_media img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    max-width: 300px;
+    overflow: hidden;
+    margin-left: 80px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+
+  .book {
+    margin-left: 90px;
+    background-color: rgb(0, 118, 106);
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 3px;
+    font-size: 12px;
+    border-style: none;
   }
