@@ -16,41 +16,6 @@
     font-weight: bold;
   }
   
-  .links ul {
-    list-style-type: none;
-    /* padding: 0; */
-  }
-  
-  .links ul li {
-    display: inline;
-  }
-  
-  .links ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    float: left;
-    padding-left: 10px;
-  }
- 
-  .links {
-    float: left;
-    /*padding-left: 1cm;*/
-  }
-
-  .search {
-    float: right;
-    background-color: white;
-    padding: 8px;
-    border-radius: 20px;
-  }
-
-  #glass {
-    width: 20px;
-    height: 20px;
-    vertical-align: bottom;
-  }
-
   #company_name {
     display: inline;
     font-weight: bold;
@@ -64,6 +29,43 @@
     float: left;
     width: 25px;
     height: 25px;
+  }
+
+  .links {
+    display: flex;
+  }
+
+  .links ul {
+    list-style-type: none;
+  }
+  
+  .links ul li {
+    display: inline-block;
+  }
+  
+  .links ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+
+  .links ul li a:hover {
+    font-weight: bolder;
+    color: red;
+  }
+ 
+  .search {
+    float: right;
+    background-color: white;
+    padding: 8px;
+    border-radius: 20px;
+  }
+
+  #glass {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
   }
 
   #conditionInput {
@@ -89,12 +91,18 @@
   .vertical {
     border-left: 2px solid white;
     height: 150px;
-    margin-left: 20px;
+    margin-left: 2%;
     float: left;
   }
 
   body {
     background-image: url('./Images/Landscape.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
   }
 
   .container {
@@ -104,16 +112,14 @@
   .headings {
     max-width: 400px;
     overflow: hidden;
-    margin-left: 80px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 9%;
     font-weight: bolder;
     font-size: 50px;
   }
 
   .social_media {
     max-width: 30px;
-    margin-left: 10px;
+    margin-left: 1%;
     float: left;
   }
 
@@ -126,16 +132,13 @@
   .description {
     max-width: 300px;
     overflow: hidden;
-    margin-left: 80px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 9%;
     font-size: 15px;
   }
 
   .book {
-    margin-left: 90px;
+    margin-left: 9%;
     background-color: rgb(0, 118, 106);
-    color: white;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 20px;
@@ -143,4 +146,23 @@
     border-radius: 3px;
     font-size: 12px;
     border-style: none;
+  }
+
+  .aboutus {
+    max-width: 800px;
+    overflow: hidden;
+    margin-left: 9%;
+    font-size: 15px;
+  }
+
+  .space {
+    float: right;
+    width: 28%;
+  }
+
+  #ourteamtitle {
+    max-width: 200px;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 9%;
   }
