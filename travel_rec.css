@@ -146,7 +146,10 @@
     border-radius: 3px;
     font-size: 12px;
     border-style: none;
+    color: white;
   }
+
+  /* CSS for the About Us page */
 
   .aboutus {
     max-width: 800px;
@@ -160,9 +163,62 @@
     width: 28%;
   }
 
+  #ourteam {
+    display: flex;
+  }
+  
   #ourteamtitle {
     max-width: 200px;
     font-size: 50px;
     font-weight: bolder;
     margin-left: 9%;
+  }
+
+  #team {
+    display: flex;
+  }
+
+  .name {
+    display: inline;
+    font-weight: bold;
+  }
+
+  .title {
+    font-weight: bold;
+    background-color: rgb(47, 80, 174);
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border-radius: 5px;
+    border-color:white;
+    font-size:10px;
+    font-weight:normal;
+  }
+
+  .member {
+    margin-left:5%;
+    margin-right:5%;
+    max-width: 150px;
+  }
+
+  .member img {
+    width: 25px;
+    height: 25px;
+    margin-left: -30px;
+  }
+
+  .job {
+    font-size:10px;
+  }
+
+  .name {
+    font-size:10px;
+  }
+
+  /* CSS for Contact Us Page */
+  .contactus {
+    font-size:10px;
+    margin-left:9%;
   }
