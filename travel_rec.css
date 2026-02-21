@@ -88,6 +88,11 @@
 
   /* CSS for thje main page */
 
+  .leftside {
+    display: flex;
+    flex-direction:column;
+  }
+
   .vertical {
     border-left: 2px solid white;
     height: 150px;
@@ -95,8 +100,13 @@
     float: left;
   }
 
+  .social_media {
+    max-width: 30px;
+    margin-left: 1%;
+    float: left;
+  }
+
   body {
-    background-image: url('./Images/Landscape.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -115,12 +125,6 @@
     margin-left: 9%;
     font-weight: bolder;
     font-size: 50px;
-  }
-
-  .social_media {
-    max-width: 30px;
-    margin-left: 1%;
-    float: left;
   }
 
   .social_media img {
@@ -218,7 +222,72 @@
   }
 
   /* CSS for Contact Us Page */
+  .container2 {
+    display:flex;
+    flex-direction:row;
+  }
+
   .contactus {
     font-size:10px;
     margin-left:9%;
+  }
+
+  .leftside {
+    margin-top:20px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    margin-left:1%;
+  }
+
+  .central {
+    display:float;
+    min-width:400px;
+    margin-left:5%;
+    align-items:center;
+  }
+
+  .right {
+    display:flex;
+    float:right;
+    margin-left:5%;
+    margin-top: 10%;
+    min-width:40%;
+    /*align-items:flex-end;*/
+    /*margin-right:auto;*/
+  }
+
+  form {
+    display: flex;
+    flex-direction:column;
+    /*float:right;*/
+  }
+
+  label {
+    display: flex;
+    font-size:10px;
+  }
+
+  .contacts {
+    background:none;
+    margin-top:8px;
+    margin-bottom:8px;
+    color:white;
+  }
+
+  textarea {
+    background:none;
+    margin-top:8px;
+    margin-bottom:8px;
+    color:white;
+  }
+
+  #submit_btn {
+    color:white;
+    background-color: rgb(0, 118, 106);
+    border-radius:3px;
+    font-size:10px;
+    border:none;
+    padding-top:5px;
+    padding-bottom:5px;
   }

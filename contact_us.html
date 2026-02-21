@@ -5,7 +5,7 @@
         <title>The Best Travel Recommendations</title>
         <link rel="stylesheet" href="./travel_rec.css">
     </head>
-    <body>
+    <body background="./Images/Landscape 2.jpeg">
         <nav>
             <div id="home">
                 <div class="company">
@@ -23,23 +23,35 @@
                 </div>
             </div>
         </nav>
-        <div class="container">
-            </br>
-            </br>
-            <div class="vertical"></div>
-            </br></br></br></br></br></br></br></br><div class="headings">CONTACT US</div>
-        </div>
-        <div class="container">
-            <div class="social_media">
-                </br>
-                </br>
-                <img src="./Images/twitter.png"></br>
-                <img src="./Images/facebook.png"></br>
-                <img src="./Images/instagram.jpg"></br>
-                <img src="./Images/linkedin.png"></br>
-            </div>
+        <div class="container2">
             </br></br>
-            <div class="contactus">Get in touch</div>
+            <div class="leftside">
+                <div class="vertical"></div>
+                <div class="social_media">
+                    </br></br></br>
+                    <img src="./Images/twitter2.png"></br>
+                    <img src="./Images/facebook.png"></br>
+                    <img src="./Images/instagram.png"></br>
+                    <img src="./Images/linkedin.png"></br>
+                    <img src="./Images/youtube.png"></br>
+                </div>
+            </div>
+            <div class="central">
+                </br></br></br></br></br></br></br></br><div class="headings">CONTACT US</div>
+                </br></br>
+                <div class="contactus">Get in touch</div>
+            </div>
+            <div class=right>
+                <form id="page">
+                    <label for="name">Name</label>          
+                    <input type="text" class="contacts" id="name" name="customername"/>
+                    <label for="email">Email</label>          
+                    <input type="text" id="email" class="contacts" name="customeremail"/>
+                    <label for="message">Message</label>
+                    <textarea id="message" class="contacts" name="customermessage" cols="40" rows="10" ></textarea>
+                    <button id="submit_btn" onclick="">Submit</button>
+                </form>
+            </div>
         </div>
     </body>
 </html>
