@@ -251,8 +251,8 @@
     display:flex;
     float:right;
     margin-left:5%;
-    margin-top: 10%;
-    min-width:40%;
+    margin-top: 100px;
+    max-width:40%;
     /*align-items:flex-end;*/
     /*margin-right:auto;*/
   }
@@ -290,4 +290,18 @@
     border:none;
     padding-top:5px;
     padding-bottom:5px;
+  }
+
+  #results img {
+    width:300ox;
+    height:300px;
+  }
+
+  .back {
+    background-color:white;
+  }
+
+  .visit {
+    color: rgb(0, 118, 106);
+    border-style: none;
   }
