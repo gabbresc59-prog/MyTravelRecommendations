@@ -293,15 +293,47 @@
   }
 
   #results img {
-    width:300ox;
-    height:300px;
+    width:100%;
+    object-fit:cover;
   }
 
   .back {
     background-color:white;
+    border-radius:3px;
+    margin-top:2%;
+    margin-bottom:2%;
+    padding-bottom:3%;
+}
+
+  h2 {
+    color:black;
+    font-size:12pt;
+    padding-left:3%;
+    padding-right:3%;
+    padding-top:3%;
+  }
+
+  .desc {
+    color:black;
+    font-size:9pt;
+    padding-left:3%;
+    padding-right:3%;
   }
 
   .visit {
-    color: rgb(0, 118, 106);
-    border-style: none;
+    background-color: rgb(0, 118, 106);
+    color: white;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    font-size: 10px;
+    margin-left:3%;
+  }
+
+  .topheader {
+    background-color: rgb(0, 118, 106);
+    border-radius: 5px;
+    height: 25px;
   }
