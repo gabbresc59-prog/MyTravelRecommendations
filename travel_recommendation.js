@@ -63,8 +63,35 @@ function searchKeyword() {
                     resultDiv.innerHTML = '<div class="topheader"></div>';
                     result.forEach((element) => {
                         element.cities.forEach((city) => {
+                            switch(element.name) {
+                                case "Brazil":
+                                    tZone = "America";
+                                    break;
+                                case "Japan":
+                                    tZone = "Asia";
+                                    break;
+                                case "Australia":
+                                    tZone = "Australia";
+                                    break;
+                                default:
+                                    tZone = "America";
+                            }
+                            let cityName = city.name.split(",")[0];
+                            cityName = cityName.replaceAll(" ", "_");
+                            cityName = cityName.replace("ã", "a");
+                            if (cityName == "Kyoto") {
+                                ZoneTime = tZone + '/' + "Tokyo";    
+                            } else if (cityName == "Rio_de_Janeiro") {
+                                ZoneTime = tZone + "/Sao_Paulo";
+                            } else {
+                                ZoneTime = tZone + '/' + cityName;
+                            }
+                            const options = { timeZone: ZoneTime, hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
+                            const cityTime = new Date().toLocaleTimeString('en-US', options);
+                        
                             resultDiv.innerHTML += `<div class="back"><img src="${city.imageUrl}" alt="hjh">
                                 <h2>${city.name}</h2><p  class="desc">${city.description}</p>
+                                <p class="desc">Local time: ${cityTime}</p>
                                 <button class="visit" id="btnVisit">Visit</button></div>`;
                         })
                         })
@@ -88,10 +115,11 @@ function clearKeyword() {
     result = [];
 }
 
+
 searchBtn.addEventListener('click', searchKeyword);
 
-searchBtn.addEventListener('keyup', function(event) {
-    if (event.keyCode === 13) {
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
         searchKeyword();
     }
 });
