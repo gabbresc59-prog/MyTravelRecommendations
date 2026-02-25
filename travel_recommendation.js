@@ -53,7 +53,7 @@ function searchKeyword() {
                 console.error('Error:', error);
                 resultDiv.innerHTML = 'An error occurred while fetching data.';
             });
-        } else if(queryKeyword.includes('countr')) {
+        } else if(queryKeyword.includes('countr') || queryKeyword.includes('brazil') || queryKeyword.includes('japan') || queryKeyword.includes('australia')) {
             fetch('travel_recommendation_api.json')
             .then(response => response.json())
             .then(data => {
