@@ -61,24 +61,24 @@ function searchKeyword() {
                     data.countries.forEach((element) => {
                         result.push(element);
                     })
-                } else if(queryKeyword.includes('brazil')) {
-                    data.countries.forEach((element) => {
-                        if(element.name.includes('Brazil')) {
-                            result.push(element);
-                        }
-                    })
-                } else if(queryKeyword.includes('japan')) {
-                    data.countries.forEach((element) => {
-                        if(element.name.includes('Japan')) {
-                            result.push(element);
-                        }
-                    })
-                } else if(queryKeyword.includes('australia')) {
-                    data.countries.forEach((element) => {
-                        if(element.name.includes('Australia')) {
-                            result.push(element);
-                        }
-                    })
+//                } else if(queryKeyword.includes('brazil')) {
+//                    data.countries.forEach((element) => {
+//                        if(element.name.includes('Brazil')) {
+//                            result.push(element);
+//                        }
+//                    })
+//                } else if(queryKeyword.includes('japan')) {
+//                    data.countries.forEach((element) => {
+//                        if(element.name.includes('Japan')) {
+//                            result.push(element);
+//                        }
+//                    })
+//                } else if(queryKeyword.includes('australia')) {
+//                    data.countries.forEach((element) => {
+//                        if(element.name.includes('Australia')) {
+//                            result.push(element);
+//                        }
+//                    })
                 }
                 if (result) {
                     resultDiv.innerHTML = '<div class="topheader"></div>';
