@@ -1,6 +1,7 @@
 const searchBtn=document.getElementById("btnSearch");
 const resetBtn=document.getElementById("btnReset");
 const resultDiv=document.getElementById("results");
+const bookNow=document.getElementById("bookNow");
 let result = [];
 
 function searchKeyword() {
@@ -20,7 +21,7 @@ function searchKeyword() {
                     result.forEach((element) => {
                         resultDiv.innerHTML += `<div class="back"><img src="${element.imageUrl}" alt="hjh">
                             <h2>${element.name}</h2><p class="desc">${element.description}</p>
-                            <button class="visit" id="btnVisit">Visit</button></div>`;
+                            <button class="visit" onclick="visitFunc()">Visit</button></div>`;
                     })
                 } else {
                     resultDiv.innerHTML = 'Condition not found.';
@@ -42,7 +43,7 @@ function searchKeyword() {
                     result.forEach((element) => {
                         resultDiv.innerHTML += `<div class="back"><img src="${element.imageUrl}" alt="hjh">
                             <h2>${element.name}</h2><p  class="desc">${element.description}</p>
-                            <button class="visit" id="btnVisit">Visit</button></div>`;
+                            <button class="visit" onclick="visitFunc()">Visit</button></div>`;
                     })
                 } else {
                     resultDiv.innerHTML = 'Condition not found.';
@@ -92,7 +93,7 @@ function searchKeyword() {
                             resultDiv.innerHTML += `<div class="back"><img src="${city.imageUrl}" alt="hjh">
                                 <h2>${city.name}</h2><p  class="desc">${city.description}</p>
                                 <p class="desc">Local time: ${cityTime}</p>
-                                <button class="visit" id="btnVisit">Visit</button></div>`;
+                                <button class="visit" onclick="visitFunc()">Visit</button></div>`;
                         })
                         })
                 } else {
@@ -115,6 +116,13 @@ function clearKeyword() {
     result = [];
 }
 
+function visitFunc() {
+    alert("Visit this fantastic place!");
+}
+
+function bookFunc() {
+    alert("We suggest you book your Dream Dsstination!");
+}
 
 searchBtn.addEventListener('click', searchKeyword);
 
@@ -125,3 +133,4 @@ document.addEventListener('keydown', function(event) {
 });
 
 resetBtn.addEventListener('click', clearKeyword);
+bookNow.addEventListener('click', bookFunc);

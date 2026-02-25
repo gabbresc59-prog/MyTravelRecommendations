@@ -134,7 +134,7 @@
   }
 
   .description {
-    max-width: 300px;
+    max-width: 95%;
     overflow: hidden;
     margin-left: 9%;
     font-size: 15px;
@@ -156,7 +156,7 @@
   /* CSS for the About Us page */
 
   .aboutus {
-    max-width: 800px;
+    width: 80%;
     overflow: hidden;
     margin-left: 9%;
     font-size: 15px;
@@ -169,10 +169,11 @@
 
   #ourteam {
     display: flex;
+    width:80%;
   }
   
   #ourteamtitle {
-    max-width: 200px;
+    width: 25%;
     font-size: 50px;
     font-weight: bolder;
     margin-left: 9%;
@@ -204,7 +205,7 @@
   .member {
     margin-left:5%;
     margin-right:5%;
-    max-width: 150px;
+    width: 25%;
   }
 
   .member img {
@@ -242,7 +243,7 @@
 
   .central {
     display:float;
-    min-width:400px;
+    width:45%;
     margin-left:5%;
     align-items:center;
   }
@@ -252,15 +253,12 @@
     float:right;
     margin-left:5%;
     margin-top: 100px;
-    max-width:40%;
-    /*align-items:flex-end;*/
-    /*margin-right:auto;*/
+    width:40%;
   }
 
   form {
     display: flex;
     flex-direction:column;
-    /*float:right;*/
   }
 
   label {
@@ -273,13 +271,7 @@
     margin-top:8px;
     margin-bottom:8px;
     color:white;
-  }
-
-  textarea {
-    background:none;
-    margin-top:8px;
-    margin-bottom:8px;
-    color:white;
+    width:100%;
   }
 
   #contact_btn {
