@@ -104,11 +104,11 @@ function searchKeyword() {
                 console.error('Error:', error);
                 resultDiv.innerHTML = 'An error occurred while fetching data.';
             });
-        } else if(queryKeyword.includes('america') || queryKeyword.includes('japan') || queryKeyword.includes('brazil') || queryKeyword.includes('australia') || ) {
+        } else if(queryKeyword.includes('japan') || queryKeyword.includes('brazil') || queryKeyword.includes('australia') || ) {
             fetch('travel_recommendation_api.json')
             .then(response => response.json())
             .then(data => {
-                data.temples.forEach((element) => {
+                data.cities.forEach((element) => {
                     result.push(element);
                 })
                 if (result) {
@@ -127,7 +127,6 @@ function searchKeyword() {
                 resultDiv.innerHTML = 'An error occurred while fetching data.';
             });
         } else {
-
             alert("Please enter a valid keyword.")
         }
     }
