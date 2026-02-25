@@ -104,7 +104,30 @@ function searchKeyword() {
                 console.error('Error:', error);
                 resultDiv.innerHTML = 'An error occurred while fetching data.';
             });
+        } else if(queryKeyword.includes('america') || queryKeyword.includes('japan') || queryKeyword.includes('brazil') || queryKeyword.includes('australia') || ) {
+            fetch('travel_recommendation_api.json')
+            .then(response => response.json())
+            .then(data => {
+                data.temples.forEach((element) => {
+                    result.push(element);
+                })
+                if (result) {
+                    resultDiv.innerHTML = '<div class="topheader"></div>';
+                    result.forEach((element) => {
+                        resultDiv.innerHTML += `<div class="back"><img src="${element.imageUrl}" alt="hjh">
+                            <h2>${element.name}</h2><p  class="desc">${element.description}</p>
+                            <button class="visit" onclick="visitFunc()">Visit</button></div>`;
+                    })
+                } else {
+                    resultDiv.innerHTML = 'Condition not found.';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                resultDiv.innerHTML = 'An error occurred while fetching data.';
+            });
         } else {
+
             alert("Please enter a valid keyword.")
         }
     }
