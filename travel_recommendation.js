@@ -115,7 +115,7 @@ function searchKeyword() {
                                 <p class="desc">Local time: ${cityTime}</p>
                                 <button class="visit" onclick="visitFunc()">Visit</button></div>`;
                         })
-                        })
+                    })
                 } else {
                     resultDiv.innerHTML = 'Condition not found.';
                 }
