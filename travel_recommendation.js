@@ -61,24 +61,24 @@ function searchKeyword() {
                     data.countries.forEach((element) => {
                         result.push(element);
                     })
-//                } else if(queryKeyword.includes('brazil')) {
-//                    data.countries.forEach((element) => {
-//                        if(element.name.includes('Brazil')) {
-//                            result.push(element);
-//                        }
-//                    })
-//                } else if(queryKeyword.includes('japan')) {
-//                    data.countries.forEach((element) => {
-//                        if(element.name.includes('Japan')) {
-//                            result.push(element);
-//                        }
-//                    })
-//                } else if(queryKeyword.includes('australia')) {
-//                    data.countries.forEach((element) => {
-//                        if(element.name.includes('Australia')) {
-//                            result.push(element);
-//                        }
-//                    })
+                } else if(queryKeyword.includes('brazil')) {
+                    data.countries.forEach((element) => {
+                        if(element.name.includes('Brazil')) {
+                            result.push(element);
+                        }
+                    })
+                } else if(queryKeyword.includes('japan')) {
+                    data.countries.forEach((element) => {
+                        if(element.name.includes('Japan')) {
+                            result.push(element);
+                        }
+                    })
+                } else if(queryKeyword.includes('australia')) {
+                    data.countries.forEach((element) => {
+                        if(element.name.includes('Australia')) {
+                            result.push(element);
+                        }
+                    })
                 }
                 if (result) {
                     resultDiv.innerHTML = '<div class="topheader"></div>';
@@ -101,7 +101,7 @@ function searchKeyword() {
                             cityName = cityName.replaceAll(" ", "_");
                             cityName = cityName.replace("ã", "a");
                             if (cityName == "Kyoto") {
-                                ZoneTime = tZone + '/' + "Tokyo";    
+                                ZoneTime = tZone + "/Tokyo";    
                             } else if (cityName == "Rio_de_Janeiro") {
                                 ZoneTime = tZone + "/Sao_Paulo";
                             } else {
@@ -115,28 +115,6 @@ function searchKeyword() {
                                 <p class="desc">Local time: ${cityTime}</p>
                                 <button class="visit" onclick="visitFunc()">Visit</button></div>`;
                         })
-                    })
-                } else {
-                    resultDiv.innerHTML = 'Condition not found.';
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                resultDiv.innerHTML = 'An error occurred while fetching data.';
-            });
-        } else if(queryKeyword.includes('japan') || queryKeyword.includes('brazil') || queryKeyword.includes('australia') || ) {
-            fetch('travel_recommendation_api.json')
-            .then(response => response.json())
-            .then(data => {
-                data.cities.forEach((element) => {
-                    result.push(element);
-                })
-                if (result) {
-                    resultDiv.innerHTML = '<div class="topheader"></div>';
-                    result.forEach((element) => {
-                        resultDiv.innerHTML += `<div class="back"><img src="${element.imageUrl}" alt="hjh">
-                            <h2>${element.name}</h2><p  class="desc">${element.description}</p>
-                            <button class="visit" onclick="visitFunc()">Visit</button></div>`;
                     })
                 } else {
                     resultDiv.innerHTML = 'Condition not found.';
